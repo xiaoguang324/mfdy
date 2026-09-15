@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 CL 01 - xiaohe
-  type: ss
-  server: 64.176.2.21
-  port: 8388
-  cipher: aes-256-gcm
-  password: xBStBEVqvGwHPocc
+  type: vless
+  server: 104.25.99.169
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-60c86b8747e5
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-aug8yr.app-f1qsy1.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-aug8yr.app-f1qsy1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
