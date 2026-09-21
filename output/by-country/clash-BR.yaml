@@ -20,8 +20,8 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇧🇷 BR 02 - xiaohe
   type: vless
-  server: 109.107.155.76
-  port: 2053
+  server: 146.185.178.18
+  port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -29,7 +29,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /tv/member/auth?ed=2560fp=chrome
+    path: /
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
