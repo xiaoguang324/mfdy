@@ -4,9 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+- name: 🇷🇴 RO 01 - xiaohe
   type: vless
-  server: 45.9.13.99
+  server: 46.183.16.4
+  port: 2087
+  uuid: 69d76969-4c52-40f5-ac1d-303571634362
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ro1.b0w.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 46.183.16.4
+- name: 🇷🇴 RO 02 - xiaohe
+  type: vless
+  server: 45.136.199.148
   port: 443
   uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
@@ -18,26 +32,19 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: ss
-  server: 46.17.45.31
-  port: 50660
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇴 RO 01 - xiaohe
+  - 🇷🇴 RO 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇴 RO 01 - xiaohe
+  - 🇷🇴 RO 02 - xiaohe
 rules:
 - MATCH,PROXIES
