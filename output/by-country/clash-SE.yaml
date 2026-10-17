@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /merky-connect/de6/
     headers:
-      Host: sub.merky.top
+      Host: 94.143.231.146
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
   server: 77.110.97.245
