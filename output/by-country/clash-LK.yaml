@@ -33,7 +33,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 03 - xiaohe
   type: vless
-  server: free.sahanwickramasinghe.me
+  server: 104.17.72.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -60,7 +60,21 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 05 - xiaohe
   type: vless
-  server: 104.17.73.206
+  server: 51.75.67.209
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 06 - xiaohe
+  type: vless
+  server: 51.75.67.209
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -82,6 +96,7 @@ proxy-groups:
   - 🇱🇰 LK 03 - xiaohe
   - 🇱🇰 LK 04 - xiaohe
   - 🇱🇰 LK 05 - xiaohe
+  - 🇱🇰 LK 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,5 +107,6 @@ proxy-groups:
   - 🇱🇰 LK 03 - xiaohe
   - 🇱🇰 LK 04 - xiaohe
   - 🇱🇰 LK 05 - xiaohe
+  - 🇱🇰 LK 06 - xiaohe
 rules:
 - MATCH,PROXIES
