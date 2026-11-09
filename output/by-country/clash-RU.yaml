@@ -12,40 +12,40 @@ proxies:
   password: 8722de56b6c0b3f6a4d01cf91c07e6aa
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 185.86.147.175
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
-  network: ws
-  ws-opts:
-    path: /service/telemetry/045d381f1166/
-    headers:
-      Host: bhjolq0d0l.flowersgood.top
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 185.86.147.175
+  server: 172.67.170.148
   port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
+  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
   network: ws
   ws-opts:
-    path: /service/telemetry/045d381f1166/
+    path: /dbb0764aca00c946?ed=2560
     headers:
-      Host: bhjolq0d0l.flowersgood.top
+      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: vless
+  server: 199.181.197.99
+  port: 443
+  uuid: 70756c73-0000-4000-8000-650000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: parsa-panel-u48we.wotic15356.workers.dev
+  network: ws
+  ws-opts:
+    path: /pulse
+    headers:
+      Host: parsa-panel-u48we.wotic15356.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: ss
   server: 46.17.47.58
