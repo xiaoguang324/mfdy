@@ -35,6 +35,18 @@ proxies:
     headers:
       Host: 47.244.120.197
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  type: vless
+  server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
+  port: 443
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   type: ss
   server: 213.176.92.148
   port: 40647
@@ -49,6 +61,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,5 +70,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
 rules:
 - MATCH,PROXIES
