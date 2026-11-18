@@ -13,10 +13,10 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: ss
-  server: 130.49.189.158
-  port: 43558
+  server: 90.156.203.62
+  port: 5112
   cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  password: VVlAff77CnAU43Aoc5j15Y
   udp: true
 proxy-groups:
 - name: PROXIES

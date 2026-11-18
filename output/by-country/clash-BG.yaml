@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇬 BG 01 - xiaohe
+  type: vless
+  server: 172.67.178.143
+  port: 443
+  uuid: ccaa9413-2163-466e-a915-29c215b0be0a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nEtRa-28e601.rUZgArSiS053GmAIlCoMsaccOunT.WORKERs.DEV
+  network: ws
+  ws-opts:
+    path: /vl/D1utewa490l8iCymueVABy77F5t?ed=2560
+    headers:
+      Host: netra-28e601.ruzgarsis053gmailcomsaccount.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇬 BG 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇬 BG 01 - xiaohe
+rules:
+- MATCH,PROXIES
